@@ -1,5 +1,3 @@
-// const { assignments }  = require("../data/assignments");
-
 const createAssignment = (
   _assignedTask,
   _person,
