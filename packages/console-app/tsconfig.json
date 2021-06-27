@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "composite": true,
+    "outDir": "lib"
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "references": [
+    { "path": "../core/tsconfig.json" }
+  ]
+}
