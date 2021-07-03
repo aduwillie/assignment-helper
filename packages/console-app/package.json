@@ -1,26 +1,25 @@
 {
-  "name": "mwb-scheduler",
-  "private": true,
+  "name": "mwb-console-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "lerna run clean",
-    "build": "lerna run build --stream",
-    "run:console": "lerna run start --scope=mwb-console-app"
+    "clean": "rimraf lib",
+    "prebuild": "yarn clean",
+    "build": "tsc --build",
+    "start": "ts-node index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "prompt-sync": "^4.2.0",
-    "uuid": "^8.3.2"
+    "@mwb/core": "*"
   },
   "devDependencies": {
     "@types/uuid": "^8.3.0",
-    "lerna": "^4.0.0",
-    "rimraf": "^3.0.2",
     "ts-node": "^10.0.0",
-    "typescript": "^4.3.4"
+    "typescript": "^4.3.4",
+    "rimraf": "^3.0.2"
   }
 }
